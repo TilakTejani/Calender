@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download ICS File</title>
+</head>
+<body>
+    <form action="https://tilaktejani.github.io/Calender/download.ics" method="get" download="event.ics">
+        <input type="hidden" name="url" value="https://tilaktejani.github.io/Calender/download.ics">
+        <button type="submit">Download Event</button>
+    </form>
+
+    <script>
+        // Automatically submit the form on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('form').submit();
+        });
+    </script>
+</body>
+</html>
